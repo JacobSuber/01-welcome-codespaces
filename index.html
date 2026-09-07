@@ -1,22 +1,430 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Student Welcome</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Suber | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Welcome!</h1>
-    <form id="nameForm">
-      <input type="text" id="studentName" placeholder="Enter your name" required>
-      <button type="submit">Continue</button>
-    </form>
-    <div id="greeting" class="hidden"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">JS.</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="intro">HELLO, I'M</p>
+
+                <h1>Jacob Suber</h1>
+
+                <h2>
+                    Software Engineering +
+                    <span>Electrical Engineering</span>
+                </h2>
+
+                <p class="hero-description">
+                    Engineering student interested in software development,
+                    artificial intelligence, automation, robotics, and building
+                    technology that solves real-world problems.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+
+                    <a href="https://github.com/JacobSuber"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn secondary-btn">
+                        GitHub
+                    </a>
+                </div>
+
+                <div class="quick-info">
+                    <div>
+                        <strong>3.6</strong>
+                        <span>GPA</span>
+                    </div>
+
+                    <div>
+                        <strong>5+</strong>
+                        <span>Programming Languages</span>
+                    </div>
+
+                    <div>
+                        <strong>2028</strong>
+                        <span>Expected Graduation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="profile-circle">JS</div>
+                <h3>Engineering Student</h3>
+                <p>Georgia Southern University</p>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Building new projects
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p>GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm an engineering student at Georgia Southern University
+                        studying Software Engineering and Electrical Engineering.
+                        I enjoy working on projects that combine programming,
+                        artificial intelligence, robotics, and automation.
+                    </p>
+
+                    <p>
+                        Through research, technical projects, and professional
+                        development opportunities, I have gained experience with
+                        software development, industrial robotics, machine vision,
+                        AI-powered workflows, and problem solving.
+                    </p>
+
+                    <p>
+                        My goal is to continue developing my technical skills while
+                        gaining experience creating technology that can make an
+                        impact in real-world environments.
+                    </p>
+                </div>
+
+                <div class="education-card">
+                    <span class="card-label">EDUCATION</span>
+
+                    <h3>Georgia Southern University</h3>
+
+                    <p>
+                        B.S. Software Engineering &
+                        Electrical Engineering
+                    </p>
+
+                    <div class="education-details">
+                        <span>GPA: 3.6</span>
+                        <span>Expected May 2028</span>
+                    </div>
+
+                    <p class="coursework">
+                        Relevant coursework includes Programming Principles I,
+                        Computing for Engineers, and Discrete Structures.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section alternate-section">
+            <div class="section-heading">
+                <p>WHAT I'VE DONE</p>
+                <h2>Experience</h2>
+            </div>
+
+            <div class="timeline">
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+                        <div class="experience-top">
+                            <div>
+                                <p class="company">Wayfair / Extern</p>
+                                <h3>AI Agent Engineering Extern</h3>
+                            </div>
+
+                            <span>2026</span>
+                        </div>
+
+                        <p>
+                            Building AI-powered workflows using tools such as
+                            n8n and Gemini to automate trend discovery and
+                            data collection.
+                        </p>
+
+                        <p>
+                            Developing data scraping processes and dashboards
+                            to analyze competitor products, pricing, and
+                            market trends.
+                        </p>
+                    </div>
+                </article>
+
+
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+                        <div class="experience-top">
+                            <div>
+                                <p class="company">Georgia Southern University</p>
+                                <h3>Manufacturing Engineering Research Assistant</h3>
+                            </div>
+
+                            <span>2025</span>
+                        </div>
+
+                        <p>
+                            Assisted with programming and developing a computer
+                            interface used to control and monitor a Meca 500
+                            industrial robot.
+                        </p>
+
+                        <p>
+                            Supported machine vision integration, 3D imaging,
+                            object detection, and improvements to robotic
+                            system accuracy.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p>THINGS I'VE BUILT</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-number">01</div>
+
+                    <div class="project-icon">🤖</div>
+
+                    <h3>Industrial Robotics & Machine Vision</h3>
+
+                    <p>
+                        Worked with a Meca 500 industrial robot and machine
+                        vision system to support automated operation, 3D
+                        imaging, and object detection.
+                    </p>
+
+                    <div class="tags">
+                        <span>Robotics</span>
+                        <span>Machine Vision</span>
+                        <span>Automation</span>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+
+                    <div class="project-icon">🧠</div>
+
+                    <h3>AI Automation Workflows</h3>
+
+                    <p>
+                        Developed AI-powered workflows using tools such as
+                        n8n and Gemini to support automated research,
+                        data collection, and trend discovery.
+                    </p>
+
+                    <div class="tags">
+                        <span>AI</span>
+                        <span>n8n</span>
+                        <span>Automation</span>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+
+                    <div class="project-icon">📱</div>
+
+                    <h3>Voice Changing iOS App</h3>
+
+                    <p>
+                        Developed a Swift application that applies audio
+                        processing concepts to modify and manipulate
+                        sound output.
+                    </p>
+
+                    <div class="tags">
+                        <span>Swift</span>
+                        <span>iOS</span>
+                        <span>Audio</span>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-number">04</div>
+
+                    <div class="project-icon">⏱️</div>
+
+                    <h3>Custom Timer App</h3>
+
+                    <p>
+                        Built a customizable timer application with
+                        user-defined inputs while focusing on functionality
+                        and user interaction.
+                    </p>
+
+                    <div class="tags">
+                        <span>Swift</span>
+                        <span>UI</span>
+                        <span>iOS</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="section alternate-section">
+            <div class="section-heading">
+                <p>WHAT I USE</p>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-category">
+                    <h3>Programming</h3>
+
+                    <div class="skill-list">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                        <span>Swift</span>
+                        <span>MATLAB</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-category">
+                    <h3>Technology</h3>
+
+                    <div class="skill-list">
+                        <span>Artificial Intelligence</span>
+                        <span>Robotics</span>
+                        <span>Machine Vision</span>
+                        <span>Automation</span>
+                        <span>Data Analysis</span>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-category">
+                    <h3>Professional</h3>
+
+                    <div class="skill-list">
+                        <span>Communication</span>
+                        <span>Problem Solving</span>
+                        <span>Collaboration</span>
+                        <span>Critical Thinking</span>
+                        <span>Adaptability</span>
+                        <span>Time Management</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROFESSIONAL DEVELOPMENT -->
+        <section class="section">
+            <div class="section-heading">
+                <p>GROWTH</p>
+                <h2>Professional Development</h2>
+            </div>
+
+            <div class="development-card">
+                <span class="card-label">FELLOWSHIP</span>
+
+                <h3>Management Leadership for Tomorrow</h3>
+
+                <h4>Career Prep Software Engineering Fellow</h4>
+
+                <p>
+                    Developing technical recruiting skills through coding
+                    interview preparation, problem-solving frameworks, and
+                    exposure to technology industry hiring expectations.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <div>
+                <p class="contact-small">LET'S CONNECT</p>
+
+                <h2>Interested in working together?</h2>
+
+                <p>
+                    I'm always interested in learning about new opportunities,
+                    projects, and ways to continue growing as an engineer.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="mailto:Jacobsuber06@gmail.com"
+                       class="btn primary-btn">
+                        Email Me
+                    </a>
+
+                    <a href="https://github.com/JacobSuber"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn secondary-btn">
+                        View GitHub
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            © <span id="year"></span> Jacob Suber.
+            Built with HTML, CSS, and JavaScript.
+        </p>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
