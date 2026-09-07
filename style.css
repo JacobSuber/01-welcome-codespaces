@@ -735,3 +735,28 @@ footer {
         padding: 40px 25px;
     }
 }
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto 25px;
+    display: block;
+    border: 3px solid #7c8cff;
+    box-shadow: 0 0 30px rgba(124, 140, 255, 0.3);
+}
+
+.email-display {
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.email-display a {
+    color: #7c8cff;
+    font-weight: bold;
+}
+
+.email-display a:hover {
+    text-decoration: underline;
+}
